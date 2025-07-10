@@ -48,8 +48,6 @@
       background-color: #fff;
       border-radius: 50%;
       animation: zoom 16s alternate infinite;
-
-      /* All your original box-shadows for star effect */
       box-shadow: -42vw -4vh 0px 0px #fff,25vw -41vh 0px 0px #fff,-20vw 49vh 0px 1px #fff,5vw 40vh 1px 1px #fff,29vw 19vh 1px 0px #fff,
                   -44vw -13vh 0px 0px #fff,46vw 41vh 0px 1px #fff,-3vw -45vh 0px 1px #fff,47vw 35vh 1px 0px #fff,12vw -8vh 1px 0px #fff,
                   -34vw 48vh 1px 1px #fff,32vw 26vh 1px 1px #fff,32vw -41vh 1px 1px #fff,0vw 37vh 1px 1px #fff,34vw -26vh 1px 0px #fff,
@@ -68,7 +66,6 @@
       100% { transform: scale(1.5); }
     }
 
-    /* Carousel fix only */
     .custom-carousel {
       max-width: 600px;
       margin: 40px auto;
@@ -95,7 +92,7 @@
     </div>
   </nav>
 
-  <h1>Welcome to Moises's Website!</h1>
+  <h1 class="text-center mb-4">Welcome to Moises's Website!</h1>
 
   <div class="container">
     <div class="row">
@@ -104,21 +101,30 @@
       </div>
 
       <div class="col-md-8">
-        <p class="custom-paragraph">Hi! I'm Moises Hernandez. I enjoy working with technology and learning new skills. I’m currently a Dev Misson Pre-Apprentace </p>
-        <p class="custom-paragraph">This project is part of a class assignment and shows some of my skills and experience so far.</p>
+        <p class="custom-paragraph">Hi! I'm Moises Hernandez, Im a curious learner who enjoys working with technology and building new skills. I’m currently a Pre-Apprentice at Dev Mission, where I’ve been developing both technical and professional abilities. My goal is to grow in the tech industry and preform the best I can</p>
+        <p class="custom-paragraph">This website is part of a class assignment and highlights some of my experiences, projects, and skills. I’m excited to continue exploring tech while building my teamwork, communication, and creativity skills.</p>
 
-        <div class="spinner-border text-info" role="status">
-          <span class="visually-hidden">Loading...</span>
+        <!-- Links -->
+        <a href="https://www.linkedin.com/in/moisesissachernandez/" class="btn btn-primary mt-3" target="_blank">View My LinkedIn</a>
+        <a href="#" class="btn btn-secondary mt-3 ms-2">View My IoT Final Project</a>
+
+        <!-- Spinners -->
+        <div class="mt-3 mb-3">
+          <div class="spinner-border text-info" role="status"><span class="visually-hidden">Loading...</span></div>
+          <div class="spinner-border text-secondary" role="status"><span class="visually-hidden">Loading...</span></div>
+          <div class="spinner-border text-light" role="status"><span class="visually-hidden">Loading...</span></div>
+          <div class="spinner-border text-primary" role="status"><span class="visually-hidden">Loading...</span></div>
         </div>
 
         <ul class="list-group mb-3">
-          <li class="list-group-item">Hard Skills: HTML/CSS/Java Script/Customer Service</li>
+          <li class="list-group-item">Hard Skills: HTML/CSS/JavaScript/Customer Service</li>
           <li class="list-group-item">Soft Skills: Adaptability, Teamwork, Time Management, Communication</li>
           <li class="list-group-item">Project: Lyric Page, LED Light</li>
-          <li class="list-group-item">Work Experience: Environmental & Climate justice Intern, Youth Community Leader, Teaching Assistant, Cashier/Barista</li>
+          <li class="list-group-item">Work Experience: Environmental & Climate Justice Intern, Youth Community Leader, Teaching Assistant, Cashier/Barista</li>
         </ul>
 
-        <div class="container mt-4">
+        <!-- Cards -->
+        <div class="container mt-4 p-3" style="background-color: #1a1a1a; border-radius: 10px;">
           <div class="card-group">
             <div class="card">
               <img src="lyricpage.jpeg" class="card-img-top" alt="Lyric Page">
@@ -138,11 +144,18 @@
               </div>
             </div>
           </div>
-
-          <h2>Interest</h2>
         </div>
 
-        <!-- Carousel -->
+        <!-- Interests -->
+        <h2 class="mt-5">Interest</h2>
+<p>During my free time, I like to stay active and creative. I enjoy playing basketball, especially with friends, and catching Warriors games whenever I can. I'm also into making beats and experimenting with music production. Outside of that, I love discovering new restaurants, trying out different kinds of food, and cooking in the mornings</p>
+       <ul class="list-group mb-3">
+          <li class="list-group-item">Creative/Artistic: Drumming, Beat Making</li>
+          <li class="list-group-item">Physical Activity:Basketball, Weightlifting, Hiking</li>
+          <li class="list-group-item">Food:Trying new reataurants, Cooking</li>
+        </ul>
+
+<!-- Carousel -->
         <div id="carouselExample" class="carousel slide custom-carousel" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -152,7 +165,13 @@
               <img src="klay.jpeg" class="d-block w-100" alt="Klay Thompson">
             </div>
             <div class="carousel-item">
+              <img src="mo.jpeg" class="d-block w-100" alt="Klay Thompson">
+            </div>
+            <div class="carousel-item">
               <img src="acai.jpeg" class="d-block w-100" alt="Acai Bowl">
+            </div>
+            <div class="carousel-item">
+              <img src="Boba.jpeg" class="d-block w-100" alt="Acai Bowl">
             </div>
           </div>
 
@@ -167,5 +186,10 @@
       </div>
     </div>
   </div>
+
+  <!-- Footer -->
+  <footer class="text-center text-white py-3 mt-5 bg-dark">
+    © 2025 Moises Hernandez | Dev Mission
+  </footer>
 </body>
 </html>
